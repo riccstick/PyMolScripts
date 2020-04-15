@@ -1,2 +1,2 @@
 # PyMolScripts
-Scripts for Pymol, in python
+Scripts/Plugins for Pymol
