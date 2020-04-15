@@ -1,8 +1,8 @@
 # PyMolScripts
 Scripts/Plugins for Pymol
 
+<img src="/samplePics/bfactorRamp2.png" alt="Highlighted bfactors"
+	title="whole protein bfactors highlighted" width="150" />
 <img src="/samplePics/bfactorRamp1.png" alt="Highlighted region"
-	title="loop region highlighted" width="150" height="100" />
-  
-![Highlighted region](/samplePics/bfactorRamp1.png =150x100)
-![Visualization of bfactors](/samplePics/bfactorRamp2.png)
+	title="loop region highlighted" width="150" />
+
