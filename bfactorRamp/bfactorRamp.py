@@ -8,7 +8,6 @@ Author: Erik Breslmayr; April 2020
 - Additionally some styling features are included, for nicer visualization
 '''
 from pymol import cmd, stored
-cmd.auto_arg[0]['bfactorRamp'] = [lambda: cmd.Shortcut(cmd.get_names() + glob.glob('*')),'filename or object name', '']
 def bfactorRamp( mol, color1="blue", color2="red", color3="yellow", cartoon="off", cartoon_putty="off", invcolor="grey40", style="off", fancy="off" ):
     '''
 DESCRIPTION
@@ -46,6 +45,7 @@ DESCRIPTION
     > bfactorRamp objectName, style=on -> changes helices style and not selected region will be transparent
     > bfactorRamp objectName, fancy=on -> changes helices style to fancy and not selected region will be transparent
     '''
+    cmd.auto_arg[0]['bfactorRamp'] = [lambda: cmd.Shortcut(cmd.get_names() + glob.glob('*')),'filename or object name', '']
     obj=cmd.get_object_list(mol)[0]
     range=cmd.spectrum("b", "%s %s %s"%(color1, color2, color3), mol)
     cmd.select("invSele","!%s" % (mol))
