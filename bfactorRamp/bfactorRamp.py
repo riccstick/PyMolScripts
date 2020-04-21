@@ -47,7 +47,7 @@ DESCRIPTION
     > bfactorRamp objectName, style=on -> changes helices style and not selected region will be transparent
     > bfactorRamp objectName, fancy=on -> changes helices style to fancy and not selected region will be transparent
     '''
-    
+    cmd.auto_arg[0]['test']=[lambda: cmd.Shortcut(['abc','bcd']), '1st argument', ', ']
     obj=cmd.get_object_list(mol)[0]
     range=cmd.spectrum("b", "%s %s %s"%(color1, color2, color3), mol)
     cmd.select("invSele","!%s" % (mol))
