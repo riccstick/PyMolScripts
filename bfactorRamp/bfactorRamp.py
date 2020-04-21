@@ -90,5 +90,5 @@ DESCRIPTION
     
     return (color1, color2, color3)
 
-cmd.extend( "bfactorRamp", bfactorRamp );
+cmd.extend( "bfactorRamp", bfactorRamp )
 cmd.auto_arg[0]['bfactorRamp'] = [lambda: cmd.Shortcut(cmd.get_names() + glob.glob('*')),'filename or object name', '']
