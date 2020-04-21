@@ -7,9 +7,7 @@ Author: Erik Breslmayr; April 2020
 - bfactorRamp colors the molecule of choise in regard of bfactors provided in the pdb file and adds a color legend starting from the lowest to the highest bfactor. 
 - Additionally some styling features are included, for nicer visualization
 '''
-import glob
-names_filenames_sc = lambda: cmd.Shortcut(cmd.get_names() + glob.glob('*'))
-cmd.auto_arg[0]['save'] = [names_filenames_sc, 'filename or object name', '']
+
 from pymol import cmd, stored
 
 def bfactorRamp( mol, color1="blue", color2="red", color3="yellow", cartoon="off", cartoon_putty="off", invcolor="grey40", style="off", fancy="off" ):
