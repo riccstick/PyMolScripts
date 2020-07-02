@@ -58,21 +58,21 @@ DESCRIPTION
     cmd.set("cartoon_highlight_color", -1, obj)
     
     if cartoon=="on":
-		cmd.show_as("cartoon", mol)
-		cmd.dss(obj, 1)
-		cmd.recolor()
+	cmd.show_as("cartoon", mol)
+	cmd.dss(obj, 1)
+	cmd.recolor()
     if cartoon_putty=="on":
-		cmd.show_as("cartoon", mol)
-		cmd.cartoon("putty", mol)
-		cmd.recolor()
+	cmd.show_as("cartoon", mol)
+	cmd.cartoon("putty", mol)
+	cmd.recolor()
     if style=="on":
-                cmd.set("cartoon_transparency", 0.5, "invSele")
-                cmd.set("cartoon_oval_length", 0.8, obj)
-                cmd.set("cartoon_oval_width", 0.2, obj)
+	cmd.set("cartoon_transparency", 0.5, "invSele")
+        cmd.set("cartoon_oval_length", 0.8, obj)
+        cmd.set("cartoon_oval_width", 0.2, obj)
     if fancy=="on":
-                cmd.set("cartoon_transparency", 0.5, "invSele")
-                cmd.set("cartoon_highlight_color", invcolor, obj)
-                cmd.set("cartoon_fancy_helices", 1, obj)
+        cmd.set("cartoon_transparency", 0.5, "invSele")
+        cmd.set("cartoon_highlight_color", invcolor, obj)
+        cmd.set("cartoon_fancy_helices", 1, obj)
 
     #Output for screen
     print "for help type: help bfactorRamp"
