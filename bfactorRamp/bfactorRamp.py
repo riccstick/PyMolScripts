@@ -58,15 +58,15 @@ DESCRIPTION
     cmd.set("cartoon_highlight_color", -1, obj)
     
     if cartoon=="on":
-		cmd.show_as("cartoon", mol)
-		cmd.dss(obj, 1)
-		cmd.recolor()
+        cmd.show_as("cartoon", mol)
+        cmd.dss(obj, 1)
+        cmd.recolor()
     if cartoon_putty=="on":
-	cmd.show_as("cartoon", mol)
-	cmd.cartoon("putty", mol)
-	cmd.recolor()
+        cmd.show_as("cartoon", mol)
+        cmd.cartoon("putty", mol)
+        cmd.recolor()
     if style=="on":
-	cmd.set("cartoon_transparency", 0.5, "invSele")
+        cmd.set("cartoon_transparency", 0.5, "invSele")
         cmd.set("cartoon_oval_length", 0.8, obj)
         cmd.set("cartoon_oval_width", 0.2, obj)
     if fancy=="on":
@@ -75,18 +75,18 @@ DESCRIPTION
         cmd.set("cartoon_fancy_helices", 1, obj)
 
     #Output for screen
-    print "for help type: help bfactorRamp"
-    print ""
-    print "Minimum bfactor: %s | Maximum bfactor: %s" % (range[0], range[1])
-    print ""
-    print "Following settings were taken:"
-    print "- mol           : %s" % (obj)
-    print "- color1,2,3    : %s, %s, %s" % (color1, color2, color3)
-    print "- cartoon       : %s" % (cartoon) 
-    print "- cartoon_putty : %s" % (cartoon_putty)
-    print "- invcolor      : %s" % (invcolor)
-    print "- style         : %s" % (style)
-    print "- fancy         : %s" % (fancy)
+    print("for help type: help bfactorRamp")
+    print("")
+    print("Minimum bfactor: %s | Maximum bfactor: %s" % (range[0], range[1]))
+    print("")
+    print("Following settings were taken:")
+    print("- mol           : %s" % (obj))
+    print("- color1,2,3    : %s, %s, %s" % (color1, color2, color3))
+    print("- cartoon       : %s" % (cartoon))
+    print("- cartoon_putty : %s" % (cartoon_putty))
+    print("- invcolor      : %s" % (invcolor))
+    print("- style         : %s" % (style))
+    print("- fancy         : %s" % (fancy))
     
     return (color1, color2, color3)
 
