@@ -58,9 +58,9 @@ DESCRIPTION
     cmd.set("cartoon_highlight_color", -1, obj)
     
     if cartoon=="on":
-	cmd.show_as("cartoon", mol)
-	cmd.dss(obj, 1)
-	cmd.recolor()
+		cmd.show_as("cartoon", mol)
+		cmd.dss(obj, 1)
+		cmd.recolor()
     if cartoon_putty=="on":
 	cmd.show_as("cartoon", mol)
 	cmd.cartoon("putty", mol)
